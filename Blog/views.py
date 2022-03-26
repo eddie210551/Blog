@@ -32,3 +32,6 @@ def espa(request):
 
 def nov_ing(request):
     return render(request,"ing90.html")
+
+def dos_ing(request):
+    return render(request,"ing00.html")
