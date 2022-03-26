@@ -12,6 +12,8 @@ urlpatterns = [
     path('mensajes/',views.mensajes),
     path('musica-ingles/',views.ingles),
     path('espa/',views.espa), 
+    path('ing90/',views.nov_ing),
+    path('ing00/',views.dos_ing)
 
 
 ]
