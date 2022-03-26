@@ -28,3 +28,7 @@ def ingles(request):
 def espa(request):
     #return HttpResponse('espa')
     return render(request,"espa.html")
+
+
+def nov_ing(request):
+    return render(request,"ing90.html")
