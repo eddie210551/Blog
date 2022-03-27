@@ -35,3 +35,6 @@ def nov_ing(request):
 
 def dos_ing(request):
     return render(request,"ing00.html")
+
+def profes(request):
+    return render(request,"espacioprofesores.html")
