@@ -4,14 +4,21 @@ from django.shortcuts import render
 
 
 
+def loginalumno(request):
+    return render(request,"loginalumno.html")
 
-
+def loginprofesor(request):
+    return render(request, "loginprofesor.html")
+    
 def homepage(request):
     #return HttpResponse('homepage')
     return render(request,"homepage.html")
 
 def profes(request):
     return render(request,"espacioprofesores.html")
+
+def alumnos(request):
+    return render(request,"espacioalumnos.html")
 
 
 def about(request):
