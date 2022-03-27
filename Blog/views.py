@@ -4,7 +4,8 @@ from django.shortcuts import render
 
 
 
-
+def loginalumno(request):
+    return render(request,"loginalumno.html")
 
 def homepage(request):
     #return HttpResponse('homepage')
