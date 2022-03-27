@@ -13,6 +13,9 @@ def homepage(request):
 def profes(request):
     return render(request,"espacioprofesores.html")
 
+def alumnos(request):
+    return render(request,"espacioalumnos.html")
+
 
 def about(request):
     #return HttpResponse('about')
