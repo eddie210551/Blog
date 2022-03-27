@@ -10,11 +10,15 @@ def homepage(request):
     #return HttpResponse('homepage')
     return render(request,"homepage.html")
 
+def profes(request):
+    return render(request,"espacioprofesores.html")
+
 
 def about(request):
     #return HttpResponse('about')
     return render(request,"about.html")
 
+# Para luego
 
 def menu(request):
     return HttpResponse('menu')
@@ -22,28 +26,5 @@ def menu(request):
 def mensajes(request):
     return HttpResponse('menajes')
 
-def ingles(request):
-    #return HttpResponse('ingles')
-    return render(request,"music_ing.html")
-def espa(request):
-    #return HttpResponse('espa')
-    return render(request,"espa.html")
 
 
-def nov_ing(request):
-    return render(request,"ing90.html")
-
-def dos_ing(request):
-    return render(request,"ing00.html")
-
-def profes(request):
-    return render(request,"espacioprofesores.html")
-
-class Persona(object):
-    def __init__(self,nombre, apellido):
-
-        self.nombre = nombre
-        self.apellido = apellido
-    def __str__(self):
-        return " %s: %s, %s" %
-            (str(self.apellido, self.nombre)
