@@ -11,8 +11,8 @@ urlpatterns = [
     path('profes/',views.profes),
     path('alumnos/',views.alumnos)
     # Para luego
-    path('menu/', views.menu),
-    path('mensajes/',views.mensajes),
+    # path('menu/', views.menu),
+    # path('mensajes/',views.mensajes),
     
 
 ]
