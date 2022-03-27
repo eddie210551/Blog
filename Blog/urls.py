@@ -8,12 +8,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('about/', views.about),  
     path( 'home/', views.homepage),
+    path('profes/',views.profes),
+    # Para luego
     path('menu/', views.menu),
     path('mensajes/',views.mensajes),
-    path('musica-ingles/',views.ingles),
-    path('espa/',views.espa), 
-    path('ing90/',views.nov_ing),
-    path('ing00/',views.dos_ing)
-
+    
 
 ]
