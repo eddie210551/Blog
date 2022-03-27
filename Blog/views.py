@@ -38,3 +38,12 @@ def dos_ing(request):
 
 def profes(request):
     return render(request,"espacioprofesores.html")
+
+class Persona(object):
+    def __init__(self,nombre, apellido):
+
+        self.nombre = nombre
+        self.apellido = apellido
+    def __str__(self):
+        return " %s: %s, %s" %
+            (str(self.apellido, self.nombre)
