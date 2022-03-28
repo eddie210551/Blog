@@ -8,12 +8,13 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('about/', views.about),  
     path( 'home/', views.homepage),
-    path('menu/', views.menu),
-    path('mensajes/',views.mensajes),
-    path('musica-ingles/',views.ingles),
-    path('espa/',views.espa), 
-    path('ing90/',views.nov_ing),
-    path('ing00/',views.dos_ing)
+    path('profes/',views.profes),
+    path('alumnos/',views.alumnos),
+    path('loginalumno/',views.loginalumno),
+    path('loginprofesor/', views.loginprofesor)
+    # Para luegoview 
+    # path('menu/', views.menu),
+    # path('mensajes/',views.mensajes),
     
 
 ]

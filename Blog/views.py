@@ -4,17 +4,28 @@ from django.shortcuts import render
 
 
 
+def loginalumno(request):
+    return render(request,"loginalumno.html")
 
-
+def loginprofesor(request):
+    return render(request, "loginprofesor.html")
+    
 def homepage(request):
     #return HttpResponse('homepage')
     return render(request,"homepage.html")
+
+def profes(request):
+    return render(request,"espacioprofesores.html")
+
+def alumnos(request):
+    return render(request,"espacioalumnos.html")
 
 
 def about(request):
     #return HttpResponse('about')
     return render(request,"about.html")
 
+# Para luego
 
 def menu(request):
     return HttpResponse('menu')
@@ -22,16 +33,5 @@ def menu(request):
 def mensajes(request):
     return HttpResponse('menajes')
 
-def ingles(request):
-    #return HttpResponse('ingles')
-    return render(request,"music_ing.html")
-def espa(request):
-    #return HttpResponse('espa')
-    return render(request,"espa.html")
 
 
-def nov_ing(request):
-    return render(request,"ing90.html")
-
-def dos_ing(request):
-    return render(request,"ing00.html")
