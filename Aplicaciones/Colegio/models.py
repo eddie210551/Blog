@@ -7,6 +7,8 @@ class Profesor(models.Model):
     nombre = models.CharField(max_length=30)
     apellido = models.CharField(max_length=30)
     materia = models.CharField(max_length=30)
+    email = models.CharField(max_length=100)
+    password = models.CharField(max_length=100)
 
     def __str__(self):
         txt = "{0} : {1} {2}"
@@ -14,7 +16,6 @@ class Profesor(models.Model):
 
 class Curso(models.Model):
     curso_numero = models.PositiveBigIntegerField()
-    profesor = models.CharField(max_length=30)
 
     def __str__(self):
         txt = "Curso: {0}"
@@ -28,6 +29,8 @@ class Alumno(models.Model):
     dni = models.CharField(max_length=8, primary_key=True)
     nombre = models.CharField(max_length=30)
     apellido = models.CharField(max_length=30)
+    email = models.CharField(max_length=100)
+    password = models.CharField(max_length=100)
     
 
     def __str__(self):
