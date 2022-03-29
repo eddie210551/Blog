@@ -1,1 +1,3 @@
-## Escuela Coderhouse donde los alumnos y profesores pueden visualizar distintos parámetros de su experiencia educativa.
+# Blog Estudiantil
+## Bienvenido a la web de profesores y alumnos
+### Classroom es nuestro hijo
