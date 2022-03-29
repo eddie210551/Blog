@@ -35,3 +35,5 @@ def mensajes(request):
 
 
 
+def registro(request):
+    return render(request,'signup.html')
