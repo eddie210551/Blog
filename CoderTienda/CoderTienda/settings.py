@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'tienda.apps.TiendaConfig',
     'CoderTienda',
+    'login',
+    'registro',
 
 ]
 
@@ -60,7 +62,7 @@ ROOT_URLCONF = 'CoderTienda.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [template],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
