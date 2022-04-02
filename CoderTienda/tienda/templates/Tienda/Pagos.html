@@ -1,7 +1,7 @@
 {% extends 'tienda/main.html' %}
 {% load static %}
 {% block content %}
-     <div class="row" style="color: cadetblue;">
+     <div class="row">
 		<div class="col-lg-6">
 			<div class="box-element" id="form-wrapper">
 				<form id="form">
@@ -52,8 +52,9 @@
 
 		<div class="col-lg-6">
 			<div class="box-element">
+				<a  class="btn btn-outline-dark" href="carrito/">&#x2190; Carrito</a>
 				<hr>
-				<h3 style="color: teal;">Resumen de orden </h3>
+				<h3>Resumen de orden </h3>
 				<hr>
 				{% for item in items %}
 				<div class="cart-row">
@@ -63,8 +64,8 @@
 					<div style="flex:1"><p>x</p></div>
 				</div>
 				{% endfor %}
-				<h5 style="color: red;">Items:  </h5>
-				<h5 style="color: red;">Total:   $</h5>
+				<h5>Items:  </h5>
+				<h5>Total:   $</h5>
 			</div>
 		</div>
 	</div>

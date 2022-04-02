@@ -7,7 +7,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .box-element{
-	box-shadow:hsla(225, 70%, 67%, 0.411) 0 0 16px;
+	box-shadow:hsl(0, 0%, 80%) 0 0 16px;
 	background-color: #fff;
 	border-radius: 4px;
 	padding: 10px;
@@ -25,13 +25,13 @@ h1,h2,h3,h4,h5,h6{
 	border-radius: 0 0 4px 4px;
 }
 
-#carro{
+#cart-icon{
 	width:25px;
 	display: inline-block;
 	margin-left: 15px;
 }
 
-#total{
+#cart-total{
 	display: block;
 	text-align: center;
 	color:#fff;
