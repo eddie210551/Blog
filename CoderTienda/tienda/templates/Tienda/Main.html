@@ -30,22 +30,21 @@
 		var csrftoken = getToken('csrftoken')
 
 		function getCookie(name) {
-		    // Split cookie string and get all individual name=value pairs in an array
+		
 		    var cookieArr = document.cookie.split(";");
 
-		    // Loop through the array elements
+
 		    for(var i = 0; i < cookieArr.length; i++) {
 		        var cookiePair = cookieArr[i].split("=");
 
-		        /* Removing whitespace at the beginning of the cookie name
-		        and compare it with the given string */
+
 		        if(name == cookiePair[0].trim()) {
-		            // Decode the cookie value and return
+		
 		            return decodeURIComponent(cookiePair[1]);
 		        }
 		    }
 
-		    // Return null if not found
+		  
 		    return null;
 		}
 		var cart = JSON.parse(getCookie('cart'))
@@ -63,7 +62,7 @@
 <body>
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-	  <a class="navbar-brand" href="{% url 'tienda' %}">Coder</a>
+	  <a class="navbar-brand" href="{% url 'tienda' %}" style="color: rgba(0, 136, 255, 0.722);">CoderLibros</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -71,17 +70,23 @@
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	    <ul class="navbar-nav mr-auto">
 	      <li class="nav-item active">
-	        <a class="nav-link" href="{% url 'tienda' %}">Tienda <span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="{% url 'tienda' %}" style="color: rgba(0, 136, 255, 0.722);">Tienda <span class="sr-only">(current)</span></a>
 	      </li>
 	 
 	    </ul>
 	    <div class="form-inline my-2 my-lg-0">
-	     	<a href="#"class="btn btn-warning">inicar sesion</a>
+	     	<a href="#"class="btn btn-warning" style="color: rgb(123, 2, 223);">inicar sesion</a>
 	     	
-	     	<a href="carrito/">
+	     	<a href="{% url 'Carro' %}">
 	    		<img  id="cart-icon" src="{% static 'images/cart.png' %}">
 	    	</a>
-	    	<p id="cart-total">{{cartItems}}</p>
+	    	<p id="cart-total"></p>
+
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="{% url 'Carro' %}" style="color: rgba(0, 136, 255, 0.722);">chat</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
 
 	    </div>
 	  </div>
