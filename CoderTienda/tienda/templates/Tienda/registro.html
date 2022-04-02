@@ -1,0 +1,28 @@
+{% load static %}
+<html>
+    <body>
+        <center><h1>Registro </h1></center>
+        <form action="#" method="post">
+            <center><div class="container">
+                <div class="imgcontainer">
+                    <img class="thumnail" src="{% static 'images/libro1.jpg' %}"
+                </div>
+                <label for='first_name'><b>Nombre : </b></label>
+		        <input type='text' placeholder="Registra tu nombre..." name='first_name' required><br>
+		        <label for='last_name'><b>Apellido :</b></label>
+		        <input type='text' placeholder='registra tu apellido' name='last_name' required><br>
+		        <label for='sex' ><b>Genero : </b></label>
+		        <input type='radio' name='sex' value='male' required>
+		        <label ><b>Hombre</b></label>
+		        <input type='radio' name='sex' value='female' required>
+		        <label ><b>Mujer</b></label><br>
+            	<label for ='email'><b>Email:  </b></label>
+            	<input type="email" placeholder="registra tu email" name="email" float="right"  required><br>  
+            	<label for='password'><b>contrasena : </b></label>
+            	<input type="text" placeholder="crea contrasena" name="password" required><br>  
+            	<button type="submit"><b>registrarse</b></button><br>     
+            	tienes una cuenta? <a href="http://localhost:8000/login/"> inicia sesion </a>
+            </div></center>
+        </form>
+    </body>
+</html>
