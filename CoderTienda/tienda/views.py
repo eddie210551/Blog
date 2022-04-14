@@ -1,9 +1,13 @@
 from django.shortcuts import render
 
+from  .models import *
+
 # Create your views here.
 
 def     Tienda(request):
-    return render(request,'tienda/Tienda.html')
+    productos = Producto.objects.all()
+    context = {'productos': productos}
+    return render(request,'tienda/Tienda.html',context)
     
 def     Main(request):
     context = {}
