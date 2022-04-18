@@ -32,6 +32,7 @@
                 <div style="flex:1"><strong>Total</strong></div>
             </div>
             
+            {for item in items}
             
             <div class="cart-row">
                 <div style="flex:2"><img class="row-image" src="{% static 'images/libro2.jpg' %}"></div>
@@ -45,12 +46,14 @@
                         <img data-product={{item.product.id}} data-action="remove" class="chg-quantity update-cart"  src="{% static  'images/arrow-down.png' %}">
                     </div>
                 </div>
+                { endfor }
                 <div style="flex:1"><p>${{item.get_total}}</p></div>
             </div>
             
         </div>
     </div>
 </div>
+ 
 
 {% endblock content %}
 
