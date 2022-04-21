@@ -5,13 +5,13 @@
 <div class="row">
     {% for Producto in productos %}
     <div class="col-lg-4">
-        <img class="thumbnail" src="{% static 'images/libro3.jpg' %}">
+        <img class="thumbnail" src="{{Producto.imageURL}}">
         <div class="box-element product">
-            <h6><strong>{{producto.name}}</strong></h6>
+            <h6><strong>{{Producto.name}}</strong></h6>
             <hr>
             <button data-product={{producto.id}} data-action="add" 
-                class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
-            <h4 style="display: inline-block; float: right"><strong>${{producto.price|floatformat:2}}</strong></h4>
+                class="btn btn-outline-secondary add-btn update-cart" style="color: blue;">AGREGAR</button>
+            <h4 style="display: inline-block; float: right"><strong>${{Producto.price|floatformat:2}}</strong></h4>
     
         </div>
     </div>
