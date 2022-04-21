@@ -14,6 +14,7 @@ def     Main(request):
     return render(request,'tienda/Main.html',context)
     
 def     Carro(request):
+    
     context = {}
     return render(request,'tienda/Carro.html',context)
     
