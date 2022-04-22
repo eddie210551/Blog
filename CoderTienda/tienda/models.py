@@ -59,7 +59,7 @@ class Orden(models.Model):
         return shipping
         
 class Items(models.Model):
-    Producto = models.ForeignKey(Producto, on_delete=models.SET_NULL, null=True)
+    Product = models.ForeignKey(Producto, on_delete=models.SET_NULL, null=True)
     order = models.ForeignKey(Orden, on_delete=models.SET_NULL, null=True)
     quantity = models.IntegerField(default=0, null=True, blank=True)
     date_added = models.DateTimeField(auto_now_add=True)
